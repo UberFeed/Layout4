@@ -5,6 +5,10 @@ html {
 
 body {
   margin: 0;
+  background-image: url(../img/main/bg-main.png);
+  background-repeat: no-repeat;
+  min-height: 1944px;
+  background-position: top center;
 }
 body .header {
   max-width: 1920px;
@@ -77,4 +81,8 @@ body .header .header__wrapper .header__more p {
   margin: 0;
   color: #fff;
   font-size: 0.857rem;
+}
+body .main {
+  max-width: 1920px;
+  margin: 0 auto;
 }
