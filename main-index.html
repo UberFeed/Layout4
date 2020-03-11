@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 <body>
@@ -35,10 +36,48 @@
 <section class="main">
     <div class="main__wrapper wrapper">
         <div class="main__submenu">
-             
+            <a class = "main__submenu-btn1" href="">Сегодня</a>
+            <a class = "main__submenu-btn2" href="">Завтра</a>
+            <!-- <a class = "main__submenu-btn3" href=""><img src="img/main/main__submenu-btn.png" alt="">13.09.2019</a> -->
+
+            <div class="date-picker" onmousedown="return false">
+                <div class="selected-date"><img src="img/main/main__submenu-btn.png" alt=""><span id="lul"></span></div>
+
+                <div class="dates">
+                    <div class="month">
+                        <div class="arrows prev-mth"><img src="img/main/submenu-calendar-arrow-left.png" alt=""></div>
+                        <div class="mth"></div>
+                        <div class="arrows next-mth"><img src="img/main/submenu-calendar-arrow-right.png" alt=""></div>
+                    </div>
+
+                    <div class="week">
+                    </div>
+                    <div class="days">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__submenu-slider">
+                <img class = "main__submenu-arrowLeft" src="img/main/main__submenu-slide-leftArrow.png" alt="">
+                <div class="slide">
+                    <img src="img/main/main__submenu-slide-content1.png" alt="">
+                    <img src="img/main/main__submenu-slide-content2.png" alt="">
+                    <img src="img/main/main__submenu-slide-content3.png" alt="">
+                    <img src="img/main/main__submenu-slide-content4.png" alt="">
+                    <img src="img/main/main__submenu-slide-content5.png" alt="">
+                    <img src="img/main/main__submenu-slide-content6.png" alt="">
+                    <img src="img/main/main__submenu-slide-content7.png" alt="">
+                    <img src="img/main/main__submenu-slide-content8.png" alt="">
+                    <img src="img/main/main__submenu-slide-content9.png" alt="">
+                    <img src="img/main/main__submenu-slide-content10.png" alt="">
+                </div>
+                <img class = "main__submenu-arrowRight" src="img/main/main__submenu-slide-rightArrow.png" alt="">
+            </div>
+
         </div>
     </div>
 </section>
 
+<script src = "js/main.js"></script>
 </body>
 </html>

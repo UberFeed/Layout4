@@ -1,6 +1,9 @@
 html
     font-family: 'Roboto'
     font-size: 14px
+.wrapper
+    max-width: 1140px
+    margin: 0 auto
 body
     margin: 0
     background-image: url(../img/main/bg-main.png)
@@ -12,9 +15,6 @@ body
         margin: 0 auto
         background-image: url(../img/header/bg-header.png)
         background-position: center
-        .wrapper
-            max-width: 1140px
-            margin: 0 auto
         .header__wrapper
             display: flex
             min-height: 66px
@@ -61,5 +61,129 @@ body
     .main
         max-width: 1920px
         margin: 0 auto
-        // background-image: url(../img/main/bg-main.png)
+        background-color: rgba(0, 0, 0, 0.3 )
+        .main__wrapper
+            .main__submenu
+                min-height: 80px
+                display: flex
+                align-items: center
+                a
+                    justify-content: center
+                    display: flex
+                    height: 40px
+                    width: 117px
+                    text-decoration: none
+                    color: #fff
+                    text-align: center
+                    align-items: center
+                    background-color: #db3259
+                    border-radius: 5px
+                    margin-right: 7px
+                    img
+                        margin-right: 5px
+                        width: 17px
+                        height: 17px
+                        align-self: center
+                .main__submenu-btn3
+                    width: 137px
+                a:hover 
+                    background-color: #ba1d41   
+                .date-picker
+                    position: relative
+                    cursor: pointer
+                    .selected-date:hover
+                        background-color: #ba1d41
+                    .selected-date
+                        justify-content: center
+                        display: flex
+                        height: 40px
+                        width: 137px
+                        text-decoration: none
+                        color: #fff
+                        text-align: center
+                        align-items: center
+                        background-color: #db3259
+                        border-radius: 5px
+                        // margin-right: 7px
+                        img
+                            margin-right: 6px
+                    .dates
+                        display: none
+                        position: absolute
+                        top: 50px
+                        left: 0
+                        right: 0
+                        width: 240px
+                        background-color: #f9f9f9
+                        border-radius: 5px
+                        .days
+                            height: 170px
+                            display: grid
+                            grid-template-columns: repeat(7, 1fr)
+                            justify-content: center
+                            .today
+                                background-color: rgba(0, 0, 0, 0.3 )
+                            .number
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                height: 100%
+                            .prev
+                                color: #db3259
+                                display: flex
+                                justify-content: center
+                                align-self: center
+                        .month
+                            display: flex
+                            background-color: #db3259
+                            height: 50px
+                            justify-content: space-around
+                            align-items: center
+                            border-radius: 5px 5px 0 0
+                            .arrows
+                                padding: 10px
+                            .mth
+                                font-weight: bold
+                                color: #fff
+                                width: 100px
+                                text-align: center
+                        .week
+                            height: 30px
+                            display: flex
+                            justify-content: space-around
+                            background-image: url(../img/main/submenu-calendar-bg.png)
+                            background-position: bottom
+                            .weeks
+                                justify-self: center
+                                text-transform: uppercase
+                                padding-top: 9px
+                                font-size: 0.75rem
+                                font-weight: bold
+                                color: #db3259
+                    .active
+                        display: block
+
+                .main__submenu-slider
+                    display: flex
+                    margin-left: auto
+                    .main__submenu-arrowLeft
+                        width: 23px
+                        height: 23px
+                        align-self: center
+                        margin-right: 12px
+                    .main__submenu-arrowRight
+                        width: 23px
+                        height: 23px
+                        align-self: center
+                        margin-left: 12px
+                    .slide
+                        & :last-child
+                            margin-right: 0px
+                        img
+                            width: 53px
+                            height: 53px
+                            margin-right: 6px
+        
+
+
 

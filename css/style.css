@@ -3,6 +3,11 @@ html {
   font-size: 14px;
 }
 
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 body {
   margin: 0;
   background-image: url(../img/main/bg-main.png);
@@ -15,10 +20,6 @@ body .header {
   margin: 0 auto;
   background-image: url(../img/header/bg-header.png);
   background-position: center;
-}
-body .header .wrapper {
-  max-width: 1140px;
-  margin: 0 auto;
 }
 body .header .header__wrapper {
   display: -webkit-box;
@@ -85,4 +86,195 @@ body .header .header__wrapper .header__more p {
 body .main {
   max-width: 1920px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .main .main__wrapper .main__submenu {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .main .main__wrapper .main__submenu a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 117px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #db3259;
+  border-radius: 5px;
+  margin-right: 7px;
+}
+body .main .main__wrapper .main__submenu a img {
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+body .main .main__wrapper .main__submenu .main__submenu-btn3 {
+  width: 137px;
+}
+body .main .main__wrapper .main__submenu a:hover {
+  background-color: #ba1d41;
+}
+body .main .main__wrapper .main__submenu .date-picker {
+  position: relative;
+  cursor: pointer;
+}
+body .main .main__wrapper .main__submenu .date-picker .selected-date:hover {
+  background-color: #ba1d41;
+}
+body .main .main__wrapper .main__submenu .date-picker .selected-date {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 137px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #db3259;
+  border-radius: 5px;
+}
+body .main .main__wrapper .main__submenu .date-picker .selected-date img {
+  margin-right: 6px;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 240px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .days {
+  height: 170px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .days .today {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .days .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .days .prev {
+  color: #db3259;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #db3259;
+  height: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px 5px 0 0;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .month .arrows {
+  padding: 10px;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .month .mth {
+  font-weight: bold;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .week {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url(../img/main/submenu-calendar-bg.png);
+  background-position: bottom;
+}
+body .main .main__wrapper .main__submenu .date-picker .dates .week .weeks {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-transform: uppercase;
+  padding-top: 9px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #db3259;
+}
+body .main .main__wrapper .main__submenu .date-picker .active {
+  display: block;
+}
+body .main .main__wrapper .main__submenu .main__submenu-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+body .main .main__wrapper .main__submenu .main__submenu-slider .main__submenu-arrowLeft {
+  width: 23px;
+  height: 23px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 12px;
+}
+body .main .main__wrapper .main__submenu .main__submenu-slider .main__submenu-arrowRight {
+  width: 23px;
+  height: 23px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 12px;
+}
+body .main .main__wrapper .main__submenu .main__submenu-slider .slide :last-child {
+  margin-right: 0px;
+}
+body .main .main__wrapper .main__submenu .main__submenu-slider .slide img {
+  width: 53px;
+  height: 53px;
+  margin-right: 6px;
 }
